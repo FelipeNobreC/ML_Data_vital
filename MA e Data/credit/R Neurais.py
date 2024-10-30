@@ -3,8 +3,8 @@ import pickle
 from sklearn.metrics import accuracy_score, classification_report
 
 
-with open('credit.pkl', 'rb') as f:
-  X_credit_treinamento, y_credit_treinamento, X_credit_teste, y_credit_teste = pickle.load(f)
+with open('/Users/felip/PycharmProjects/MA e Data/credit/credit.pkl', 'rb') as f:
+  X_credit_treinamento, X_credit_teste, y_credit_treinamento, y_credit_teste = pickle.load(f)
 
 # 3 -> 100 -> 100 -> 1
 # 3 -> 2 -> 2 -> 1
