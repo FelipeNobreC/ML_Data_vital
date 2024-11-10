@@ -7,10 +7,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
 from sklearn.model_selection import train_test_split
 import pickle
-import math
+
 
 #abre o csv
-base_credit = pd.read_csv('../basededados/credit_data.csv')
+base_credit = pd.read_csv('/Users/felip/PycharmProjects/MA e Data/basededados/credit_data.csv')
 #localiza na coluna age do csv onde tem valores menores que 0 e subistitue pela media
 base_credit.loc[base_credit['age'] < 0, 'age'] = 40.92
 #filtra na coluna age valores sem preencher e coloca no lugar a media da coluna
